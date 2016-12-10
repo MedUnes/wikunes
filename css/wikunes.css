@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,400,500,800');
+
+/* ---------------------------------------------------------------------------------*/
+/*************************  BEGIN BODY(GLOBAL) STYLING ***********************************/
+
+body
+{ 
+	background: url('https://s-media-cache-ak0.pinimg.com/originals/2e/c5/89/2ec5898721280f8885b287c57f017864.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+.row
+{
+	margin-bottom:64px;
+	margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/*************************  END BODY(GLOBAL) STYLING ***********************************/
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------*/
+/*************************  BEGIN MAIN (HEADER) STYLING ***********************************/
+
+#main
+{
+	background-color:#111;
+	color:#f00; /*red*/
+	opacity:0.8;
+	filter:alpha(opacity=0.8);
+	padding-top:60px;
+	font-family: 'Linux Libertine';
+}
+#main h1
+{
+	font-size:81px;
+}
+#main a
+{
+	color:#fff;
+	font-family: 'Krona One';
+	font-size:14px;
+	text-decoration:underline;
+}
+#main a:hover
+{
+	color:#f00;
+}
+#search-row
+{
+	margin-top:64px;
+}
+#txtQuery
+{
+	width:50%;
+	margin:auto;
+}
+label
+{
+	font-family: 'Krona One';
+	font-size:18px;
+	background-color:#a00;
+	color:#000;
+}
+/*************************  END MAIN (HEADER) STYLING ***********************************/
+/* ---------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------*/
+/*************************  BEGIN  SEARCH RESULTS STYLING ***********************************/
+
+div[id^="result-"]
+{
+	background-color:#000;
+	color:#eee;
+	opacity:0.8;
+	border:1px #000 solid;
+	padding:32px;
+	font-family: 'Raleway', sans-serif;
+	transition:border 0.5s,opacity 0.5s,background-color 0.5s;
+	
+	
+}
+div[id^="result-"]:hover
+{
+	opacity:0.7;
+	background-color:#900;
+	border:1px solid #900;
+}
+div[id^="result-"] img
+{
+	height:64px;
+	width:64px;
+}
+
+div[id^="result-"] h4
+{
+	font-weight:400;
+	color:#fff;
+}
+div[id^="result-"] p
+{
+	font-weight:300;
+}
+/*************************  END  SEARCH RESULTS STYLING ***********************************/
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------*/
+/*************************  BEGIN  FOOTER STYLING ***********************************/
+
+#footer
+{
+	background:url('../img/footer.png') repeat repeat;
+	font-family: 'Raleway', sans-serif;
+	font-weight:500;
+	color:#eee;
+	opacity:0.9;
+	padding-top:36px;
+	padding-bottom:0px;
+}
+#footer div strong
+{
+	font-size:18px;
+	color:#fff;
+}
+#footer div
+{
+	margin-bottom:32px !important;
+}
+#footer a
+{
+	color:#a00;
+	font-size:14px;
+	text-decoration:underline;
+	font-weight:bold;
+	
+}
+#footer a:hover
+{
+	color:#f00;
+}
+
+/*************************  END FOOTER STYLING ***********************************/
+/* ---------------------------------------------------------------------------------*/

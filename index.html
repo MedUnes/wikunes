@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Wikunes &copy WikipediA Viewer</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<link type="text/css" href="css/wikunes.css" rel="stylesheet"/>
+		<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="//db.onlinewebfonts.com/c/3529dea4e2b75ad8bc84d80a825e9e2b?family=Linux+Libertine" rel="stylesheet"/>
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class='container-full'>
+			<div class='row'>	
+				<div id="main" class="col-xs-12">
+					<h1 class="text-center">Wikunes</h1>
+					<h2 class="text-center">WikipediA Viewer</h2>
+					<h4 class="text-center">by <a href="http://www.medunes.net" target="_blank">medunes <i class="fa fa-external-link"></i></a></h4>
+					<div id="search-row" class="row text-center">
+						<label for="txtQuery">Search in WikipediA</label>
+						<input type="text" class="form-control" id="txtQuery"></input>
+						<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><h5 class="random">Get a random topic!</h5></a>
+						<div class="fa fa-spinner fa-pulse fa-3x fa-fw"></div>
+					</div>
+				</div>
+			</div>
+			<div  id="results" class='row'></div>				
+			<div id ="footer" class="col-xs-12 text-center">
+				<div><strong>Wikunes</strong>, Designed & Coded by <a target ="_blank" href="http://www.medunes.net"> MedUnes</a></div>
+				<div class="social row text-center">	
+					<a class="github-button" href="https://github.com/medunes/wikunes" data-icon="octicon-star" data-style="mega" data-count-href="/medunes/timedulines/stargazers" data-count-api="/repos/medunes/timedulines#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star medunes/timedulines on GitHub">Star</a>
+					<a class="github-button" href="https://github.com/medunes/wikunes/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/medunes/timedulines/network" data-count-api="/repos/medunes/timedulines#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork medunes/timedulines on GitHub">Fork</a>
+				</div>
+			</div>
+		</div>
+		<!-- JQuery  SCRIPT -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>		
+		
+		<!-- Wikunes  SCRIPT -->
+		<script src="js/wikunes.js"></script>
+		
+		<!-- Github Buttons SCRIPT -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>
