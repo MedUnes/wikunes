@@ -4,10 +4,10 @@ $(document).ready(function()
 	$(".fa-spinner").hide();
 	
 	//Initiate a sample result and populate the #results section..
-	requestResults("wikipedia");
+	requestResults("freeCodeCamp");
   
   // Update  the search topic in the search-title banner
-   $("#search-title > .key").text("wikipedia");
+   $("#search-title > .key").text("freeCodeCamp");
 	
 	//Listen for the keyUp event(key pressed then released)
 	$("#txtQuery").keyup(function(e)
