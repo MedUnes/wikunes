@@ -19,7 +19,9 @@ $(document).ready(function()
       
         // Update  the search topic in the search-title banner
   $("#search-title > .key").text(searchKey);
-      
+  $('html, body').animate({
+            scrollTop: $("#search-title").offset().top
+        }, 777);
 			requestResults(searchKey);
 		}
 	});	
