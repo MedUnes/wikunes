@@ -4,8 +4,10 @@ $(document).ready(function()
 	$(".fa-spinner").hide();
 	
 	//Initiate a sample result and populate the #results section..
-	$("#txtQuery").val("Book of Optics");
-	requestResults("Book_of_Optics");
+	requestResults("wikipedia");
+  
+  // Update  the search topic in the search-title banner
+   $("#search-title > .key").text("wikipedia");
 	
 	//Listen for the keyUp event(key pressed then released)
 	$("#txtQuery").keyup(function(e)
@@ -14,10 +16,20 @@ $(document).ready(function()
 		if(e.keyCode==13)
 		{
 			var searchKey=$("#txtQuery").val();
+      
+        // Update  the search topic in the search-title banner
+  $("#search-title > .key").text(searchKey);
+      
 			requestResults(searchKey);
 		}
 	});	
 });
+
+//Clear the seach input box when clicked
+$("#txtQuery").focus(function(e)
+	{
+		$("#txtQuery").val("");
+	});	
 
 var appendStyledResult= function(resultData)
 {
@@ -164,8 +176,14 @@ var requestResults=function(searchKey)
 					fetchSingleResult(wikiData,i);
 				}
 			}
-			// All the job is done, so please stop spinning!
+			
+      //Clear the search input
+      $("#txtQuery").val("");
+      
+      // All the job is done, so please stop spinning!
 			$(".fa-spinner").hide();
+      
+      
 		}	
 	});
 };
